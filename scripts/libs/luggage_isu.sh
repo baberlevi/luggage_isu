@@ -11,17 +11,16 @@
 # ./scripts/build_luggage_isu.sh
 #
 
-ALIAS="@self"
 
 install_luggage_isu_suitcase() {
   # Install Theme - Suitcase
-  drush $ALIAS en -y suitcase
-  drush $ALIAS vset theme_default suitcase
+  drush en -y suitcase
+  drush vset theme_default suitcase
 }
 
 install_luggage_isu_features() {
   # Install luggage_isu features
-  drush -v $ALIAS en -y luggage_people_isu
-  drush -v $ALIAS en -y suitcase_config
-  drush -v $ALIAS en -y isushib isushibsiteaccess
+  drush -v en -y luggage_people_isu
+  drush -v en -y suitcase_config
+  drush -v en -y isushib isushibsiteaccess
 }
